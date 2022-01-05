@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body{
+            background-color: black;
+            background-image: url('https://acadtec.com.br/storage/posts/pictures/xvJ3NLSKUF4wMqwHrZTe582480234f6a8.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            
+        }
+        
+        form{
+            margin: 0 auto;
+            background-color: white;
+            min-width: 60vh;
+            max-width: 70vh;
+        
+            padding: 1vh;
+        }
+        input{
+            width: 100%;
+        }
+      
+        button{
+            text-transform: uppercase;
+            cursor:pointer;
+
+            padding: 20px;
+            margin-left: 10px;
+        }
+        #dev{
+            width: auto;
+        }
+        #cadastro{
+            text-align: center;
+            font-weight: bold ;
+
+        }        
+        #submit{
+            background-color: rgba(0, 128, 0, 0.336);
+        }
+        #reset{
+            background-color: rgba(255, 0, 0, 0.295);
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend id="cadastro">Cadastro De Dev</legend>
+            <p>
+                <fieldset>
+                    <legend>Nome Completo</legend>
+                    <input id="nome" type="text"  required>
+                </fieldset>
+
+                <p>
+                    <fieldset>
+                        <legend>
+                            E-mail
+                        </legend>
+                        <input type="email" name="email" id="email" placeholder="Ex: email@gmail.com"required>
+                    </fieldset>
+                </p>
+                </p>
+                <p>
+                    <p>
+                        <fieldset>
+                            <legend>
+                                Senha
+                            </legend>
+                            <input type="password" name="semja" id="senha" required>
+                        </fieldset>
+                    </p>
+                    <p>
+                        <fieldset>
+                            <legend>
+                                Telefone
+                            </legend>
+                            <input type="tel" name="telefone" id="telefone" placeholder="Ex: 99 99999 9999">
+                        </fieldset>
+                    </p>
+                    <fieldset>
+
+                        <legend>Data De Nascimento</legend>
+                        <input type="date" required>
+                        
+                    </fieldset>
+                </p>
+            <p>
+                <fieldset>
+                <legend>Tipo De Dev</legend>
+                
+                <label for="">Front-End</label>
+                
+                <input id="dev" type="radio" name="dev" required>
+                <br>
+                <label for="">Back-End</label>
+                
+                <input id="dev" type="radio" name="dev"required >
+                 <br>
+                <label for="">Full-Stack</label>
+                <input id="dev" type="radio" name="dev"required>
+            </fieldset>
+            </p>
+            <p>
+                <fieldset>
+                    <legend> GitHub</legend>
+                    <input type="url" name="url" id="url">
+                </fieldset>
+                
+            </p>
+            <p>
+                <fieldset>
+                    <legend>Formacão Academica</legend>
+                    <select name="formacao" id="formacao">
+                        <option value="Fundamental">Fundamental</option>
+                        <option value="Medio">Medio</option>
+                        <option value="Superior">Superior</option>
+                        <option value="Pós-Graduacão">Pos-Graduacão</option>
+                        <option value="Mestrado">Mestrado</option>
+                        <option value="Doutorado">Doutorado</option>
+                    </select>
+                </fieldset>
+            </p>
+            <fieldset>
+                <legend>Curriculo</legend>
+                <input type="file" name="curriculo" id="curriculo" required>
+            </fieldset>
+            <p>
+                <button id="submit" type="submit">cadastrar</button>
+                <button id="reset" type="reset">Cancelar</button>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
